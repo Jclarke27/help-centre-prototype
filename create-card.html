@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How to create a card and link it to a balance — Equals Money Help Centre</title>
+<meta name="description" content="A complete walkthrough for issuing virtual and physical cards, linking them to balances, setting limits, freezing or cancelling, and rolling them out to your team." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+
+  <header class="eq-header">
+    <div class="left">
+      <a class="logo" href="index.html" aria-label="Equals Money home">
+        <img src="assets/logo-primary.svg" alt="Equals Money" />
+      </a>
+      <div class="divider"></div>
+      <span class="helplabel">Help Centre</span>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#">Product</a>
+      <a href="#">Pricing</a>
+      <a href="#">Company</a>
+      <a href="#">Status</a>
+      <a href="#">Sign in</a>
+      <button class="header-cta" type="button">Book a demo</button>
+    </nav>
+    <button class="mobile-menu" type="button" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <div class="article-layout article">
+    <aside class="hub-side" id="side-nav" aria-label="Browse" data-mini-search="true" data-current-parent="Cards"></aside>
+
+    <div class="article-shell">
+      <div class="article-upper">
+      <div class="article-main">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Help Centre</a><span class="sep">›</span>
+          <a href="category.html?slug=cards">Cards</a>
+        </nav>
+
+        <h1>How to create a card and link it to a balance</h1>
+        <p class="lede">A complete walkthrough — issue a virtual or physical card, link it to a balance, set limits, and hand it off to a cardholder. Halfway through, we cover how to freeze or cancel a card you've already issued.</p>
+
+        <div class="body">
+          <h2 id="before-you-start">Before you start</h2>
+          <p>You'll need admin access to issue cards in Equals Money. Take a moment to decide:</p>
+          <ul>
+            <li>Who will hold the card</li>
+            <li>Whether it should be virtual (instant) or physical (3–5 working days)</li>
+            <li>Which balance the card should draw from</li>
+            <li>Initial daily, weekly, and monthly limits</li>
+          </ul>
+          <p>Gathering this up front makes the form quick — most teams can issue a card in under two minutes once they know the answers.</p>
+          <div class="callout"><strong>Tip.</strong> Cards inherit currency from the linked balance. If you link a card to your USD balance, it spends in USD without converting through GBP.</div>
+
+          <h2 id="choose-type">1. Choose virtual or physical</h2>
+          <p>Virtual cards are issued instantly. They're ideal for online subscriptions, advertising spend, or one-off purchases. The full card number, CVV, and expiry are revealed once when the card is created — store them in your password manager.</p>
+          <p>Physical cards are mailed to the cardholder's address and arrive in 3–5 working days. They support contactless, chip-and-PIN, ATM withdrawals, and Apple Pay or Google Pay.</p>
+          <p>Many teams issue a virtual card first for immediate use, and order a physical card in parallel for in-person spend.</p>
+
+          <div class="img-ph" role="img" aria-label="Screenshot: Card type selector — virtual or physical">[ product shot · card type selector ]</div>
+
+          <h2 id="pick-balance">2. Pick a balance to link</h2>
+          <p>The card spends from the balance you link. You have a few options:</p>
+          <ul>
+            <li>Link to a single-currency balance (e.g. EUR) — the card transacts in that currency with no FX conversion.</li>
+            <li>Link to your home-currency balance (e.g. GBP) — most flexible, but international spend uses live mid-market FX rates.</li>
+            <li>Use a sub-balance if your team has separate cost centres or projects you want to track independently.</li>
+          </ul>
+          <p>You can change the linked balance later by editing the card. Any pending authorisations stay against the original balance until they settle.</p>
+
+          <h2 id="set-limits">3. Set initial limits</h2>
+          <p>Three caps apply to every card:</p>
+          <ul>
+            <li><strong>Daily</strong> — resets at midnight UTC.</li>
+            <li><strong>Weekly</strong> — resets each Monday at 00:00 UTC.</li>
+            <li><strong>Monthly</strong> — resets on the 1st at 00:00 UTC.</li>
+          </ul>
+          <p>Set them a little tighter than you think — limits are easy to raise later, but a runaway charge is harder to recover. As a rule of thumb, start at roughly twice the cardholder's typical weekly spend.</p>
+          <p>You can also restrict the card to specific merchant categories. Block gambling, adult content, or travel categories on cards that only need to pay for SaaS or office supplies.</p>
+
+          <h2 id="freeze-or-cancel">Freeze or cancel a card from the dashboard</h2>
+          <p>Step-by-step: find the card in your <strong>Cards</strong> page, open it, and choose <strong>Freeze</strong>. The card is frozen instantly — new transactions are blocked, but in-flight authorisations complete normally.</p>
+          <p>To cancel a card, open the card and choose <strong>Cancel</strong>. Cancellation is permanent — the card number is dead and you'll need to issue a fresh one. From the same screen you can issue a replacement, which carries over the linked balance and limits but generates a new card number, CVV, and expiry.</p>
+          <div class="callout"><strong>Freeze is reversible. Cancel is not.</strong> If you're not sure whether to terminate a card permanently — start with freeze. Unfreeze the same way you froze it.</div>
+          <p>This section is independently tagged in our help centre, so it shows up as its own result when someone searches "freeze card" — alongside a small "↗" indicator that points back to this guide. Click that indicator and you land right here.</p>
+
+          <div class="img-ph" role="img" aria-label="Screenshot: Card detail page with Freeze and Cancel buttons">[ product shot · card detail with freeze + cancel ]</div>
+
+          <h2 id="hand-off">4. Hand the card off</h2>
+          <p>Once the card is created, the cardholder gets an email with an activation link. From there they:</p>
+          <ul>
+            <li>Set their own PIN (for physical cards).</li>
+            <li>Add the card to Apple Pay or Google Pay if they want mobile payments.</li>
+            <li>See their card details, transaction history, and current spend against limits in the app.</li>
+          </ul>
+          <p>Cardholders can freeze and unfreeze their own card, but they can't change limits or cancel it — those controls stay with admins.</p>
+
+          <h2 id="track-activity">5. Track activity and update later</h2>
+          <p>Every transaction lands on the card's detail page in real time. From there you can:</p>
+          <ul>
+            <li>Send notifications to a Slack channel or email distribution list when spend events happen.</li>
+            <li>Export per-card statements as CSV or PDF for end-of-month reconciliation.</li>
+            <li>Adjust limits, merchant categories, or the linked balance as the cardholder's needs change.</li>
+            <li>Bulk-edit cards if you're rolling out a change across a team — limit increases for a season, restricted categories for a new policy.</li>
+          </ul>
+          <p>For ongoing reconciliation, connect Xero, QuickBooks, or NetSuite from Settings → Integrations and we'll sync transactions nightly.</p>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <p><strong>What's the difference between freeze and cancel?</strong><br />
+          Freeze is reversible — unfreeze the same way and the card resumes. Cancel is permanent — the card number is dead and you have to issue a replacement.</p>
+          <p><strong>Can a cardholder issue their own card?</strong><br />
+          No — only admins can create cards. Cardholders can manage the card they hold (view details, freeze, see transactions) but can't issue new ones.</p>
+          <p><strong>Are virtual cards safe for online subscriptions?</strong><br />
+          Yes, and we recommend them. If a merchant is breached, you can freeze the card instantly from the dashboard without disrupting other subscriptions or in-person spend.</p>
+          <p><strong>What happens to pending payments if I cancel a card?</strong><br />
+          In-flight authorisations complete; any new attempts are declined. Refunds for the cancelled card land back in the linked balance.</p>
+        </div>
+      </div>
+
+      <aside class="article-side" aria-label="Article sidebar">
+        <div class="card">
+          <h4>In this guide</h4>
+          <nav class="toc">
+            <a href="#before-you-start">Before you start</a>
+            <a href="#choose-type">1. Choose virtual or physical</a>
+            <a href="#pick-balance">2. Pick a balance to link</a>
+            <a href="#set-limits">3. Set initial limits</a>
+            <a href="#freeze-or-cancel">Freeze or cancel a card</a>
+            <a href="#hand-off">4. Hand the card off</a>
+            <a href="#track-activity">5. Track activity</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </div>
+      </aside>
+      </div>
+
+      <div class="article-below">
+        <div class="feedback" role="group" aria-label="Was this helpful?">
+          <span class="q">Was this helpful?</span>
+          <div class="thumbs">
+            <button class="thumb" type="button" aria-label="Yes, this was helpful">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 11v9H4v-9h3zM7 11l4-7a2 2 0 013 2v4h5a2 2 0 012 2l-2 7a2 2 0 01-2 1H7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="thumb" type="button" aria-label="No, this was not helpful">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="transform: rotate(180deg);"><path d="M7 11v9H4v-9h3zM7 11l4-7a2 2 0 013 2v4h5a2 2 0 012 2l-2 7a2 2 0 01-2 1H7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <span class="note">Your feedback improves this guide.</span>
+        </div>
+
+        <div class="related">
+          <h2>Related guides</h2>
+          <div class="related-grid">
+            <a class="result-card" href="faq.html">
+              <h3>How do I freeze a card?</h3>
+              <p class="snippet">The one-minute version of the freeze section above — the standalone FAQ.</p>
+              <div class="row2"><span class="tag category">Cards</span><span class="tag faq">1 min read</span></div>
+            </a>
+            <a class="result-card" href="subpage.html?parent=Cards&title=Limits%20and%20PINs">
+              <h3>Change daily, weekly, and monthly limits</h3>
+              <p class="snippet">Edit spend caps from the card detail page.</p>
+              <div class="row2"><span class="tag category">Cards</span><span class="tag faq">2 min read</span></div>
+            </a>
+            <a class="result-card" href="subpage.html?parent=Cards&title=Virtual%20cards">
+              <h3>Virtual vs physical cards: when to use which</h3>
+              <p class="snippet">A short decision guide — when instant virtual cards win and when the plastic makes sense.</p>
+              <div class="row2"><span class="tag category">Cards</span><span class="tag faq">5 min read</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="support-cta">
+          <div>
+            <div class="t">Still stuck?</div>
+            <div class="s">Talk to support. Average reply time under 3 minutes during business hours.</div>
+          </div>
+          <a class="btn btn-on-dark" href="#">Contact support
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="eq-footer">
+    <span>© 2026 Equals Money</span>
+    <div class="links">
+      <a href="#">Contact support</a>
+      <a href="#">System status</a>
+      <a href="#">Legal</a>
+    </div>
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

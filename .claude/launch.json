@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "help-centre (python http.server)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4000", "--directory", "/Users/j.clarke/Documents/help-centre"],
+      "port": 4000
+    },
+    {
+      "name": "help-centre (npx serve)",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "--listen", "4001", "/Users/j.clarke/Documents/help-centre"],
+      "port": 4001
+    }
+  ]
+}
